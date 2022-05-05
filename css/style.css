@@ -1,0 +1,153 @@
+@font-face {
+  font-family: fav;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: favthin;
+  src: url(fonts/Montserrat-Thin.ttf);
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  background-size: cover;
+  background-position: center;
+}
+.navbar{
+  width: 100%;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  transition: all 200 ease-in-out;
+}
+.logo{
+  width: auto;
+  font-size: 25vh;
+  cursor: pointer;
+  color: #00171F;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 2.5vh;
+  font-family: fav;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #00171F;
+  text-transform: uppercase;
+  transition: 1s;
+}
+.navbar ul li a:hover{
+  text-decoration: none;
+  color: #003459;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 1.5px;
+  width: 0;
+  background: #00171F;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  transition: .75s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+  background: #003459;
+}
+.content{
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 55%;
+  transform: translateY(-75%);
+  text-align: center;
+  color: #00171F;
+}
+.content h1{
+  font-size: 8vh;
+  margin-top: 80px;
+  font-family: fav;
+}
+.content p{
+  margin: 20px auto;
+  font-size: 2.3vh;
+  font-weight: 25px;
+  font-family: favthin;
+}
+button{
+  font-family: fav;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  background: transparent;
+  color: #00171F;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.75s;
+}
+span{
+  background: #003459;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.75s;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  color: white;
+}
+footer{
+  background-color: white;
+  height: 100%;
+  text-align: center;
+}
+.Contact_Me button{
+  border: 0px;
+  color: #1A2238;
+  font-size: 2vh;
+}
+.Contact_Me a{
+  text-decoration: none;
+  color: #1A2238;
+}
+.Social_Media button{
+  border-radius: 50%;
+  border: solid 1px #1A2238;
+  width: 8vh;
+  height: 8vh;
+}
+.hover_img {display: none;}
+.linked:hover .hover_img {display: inline-block;}
+.linked:hover .init_img {display: none;}
+.insta:hover .hover_img {display: inline-block;}
+.insta:hover .init_img {display: none;}
+.git:hover .hover_img {display: inline-block;}
+.git:hover .init_img {display: none;}
+.linked:hover{background-color: #003459;}
+.insta:hover{background-color: #003459;}
+.git:hover{background-color: #003459;}

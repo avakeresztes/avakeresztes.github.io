@@ -1,0 +1,83 @@
+@font-face {
+  font-family: fav;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: favthin;
+  src: url(fonts/Montserrat-Thin.ttf);
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #89CFEB;
+}
+#about{
+  background-color: #89CFEB;
+  height: 90vh;
+}
+.content1{
+  height: 90%;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 15%;
+  background-color: white;
+  border-radius: .5vh;
+  display: flex;
+}
+.about2{
+  width: 50%;
+  font-family: fav;
+}
+.about2 p{
+  color: black;
+  font-size: 1.8vh;
+  margin: 5%;
+  line-height: 180%;
+}
+.pfp_info{
+  width: 50%;
+  font-family: fav;
+}
+.pfp{
+  width: 90%;
+  height: 75%;
+  padding: 0;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.pfp img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vh;
+}
+.info{
+  height: 15vh;
+  font-size: 1.8vh;
+  margin-left: 5%;
+  margin-top: 2vh;
+}
+.info a:link{
+  color: #968D23;
+  text-decoration: none;
+}
+.info a:visited{
+  color: #968D23;
+  text-decoration: none;
+}
+.info a:hover{
+  color: black;
+}
+.mail{
+  text-align: center;
+}
+.line{
+  border: solid .5px #1A2238;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
